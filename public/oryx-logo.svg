@@ -1,0 +1,11 @@
+// Oryx logo SVG (head only)
+// Black background, white geometric oryx head
+
+<svg width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="160" height="160" fill="#111"/>
+  <g>
+    <path d="M80 120 L60 100 L40 60 L70 80 L80 40 L90 80 L120 60 L100 100 Z" fill="#fff" stroke="#fff" stroke-width="2"/>
+    <path d="M40 60 L20 20" stroke="#fff" stroke-width="4"/>
+    <path d="M120 60 L140 20" stroke="#fff" stroke-width="4"/>
+  </g>
+</svg>

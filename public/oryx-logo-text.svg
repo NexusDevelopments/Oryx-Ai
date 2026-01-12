@@ -1,0 +1,13 @@
+// Oryx logo with text SVG
+// Black background, white geometric oryx head and "ORYX" text
+
+<svg width="400" height="160" viewBox="0 0 400 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="160" fill="#111"/>
+  <g>
+    <path d="M80 120 L60 100 L40 60 L70 80 L80 40 L90 80 L120 60 L100 100 Z" fill="#fff" stroke="#fff" stroke-width="2"/>
+    <path d="M40 60 L20 20" stroke="#fff" stroke-width="4"/>
+    <path d="M120 60 L140 20" stroke="#fff" stroke-width="4"/>
+  </g>
+  <text x="170" y="110" fill="#fff" font-family="JetBrains Mono, Fira Mono, Menlo, monospace" font-size="64" font-weight="bold" letter-spacing="6">ORYX</text>
+  <rect x="170" y="120" width="200" height="4" fill="#fff"/>
+</svg>

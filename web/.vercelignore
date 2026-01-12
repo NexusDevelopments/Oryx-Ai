@@ -1,0 +1,7 @@
+# Vercel configuration for Oryx web app
+# See https://vercel.com/docs/concepts/projects/project-configuration for details
+
+# Install dependencies and build the Next.js app
+install: npm install
+build: npm run build
+output: .next

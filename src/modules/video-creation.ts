@@ -18,7 +18,7 @@ export class VideoCreationModule implements OryxModule {
     duration?: number;
     style?: string;
   }): Promise<any> {
-    const { script, images = [], duration = 30, style = 'default' } = input;
+    const { script, duration = 30, style = 'default' } = input;
     
     // Simulate video creation
     const response = {

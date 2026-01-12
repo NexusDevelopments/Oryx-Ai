@@ -41,7 +41,7 @@ export class Oryx {
 
     console.log('Initializing Oryx Unified Intelligence Platform...');
     
-    for (const [type, module] of this.modules.entries()) {
+    for (const module of this.modules.values()) {
       await module.initialize();
     }
 

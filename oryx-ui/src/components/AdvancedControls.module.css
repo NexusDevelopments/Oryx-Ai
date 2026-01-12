@@ -1,0 +1,56 @@
+.advanced {
+  position: fixed;
+  left: 260px;
+  top: 48px;
+  right: 0;
+  background: #191a1b;
+  border-bottom: 1px solid #232425;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 32px;
+  align-items: center;
+  padding: 10px 32px 10px 24px;
+  z-index: 80;
+  font-size: 0.98em;
+}
+.row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-right: 24px;
+}
+.label {
+  color: #aaa;
+  font-size: 0.97em;
+  min-width: 80px;
+}
+.select, .input, .slider, .checkbox, .file {
+  background: #232425;
+  color: #f5f6fa;
+  border: none;
+  padding: 4px 10px;
+  font-size: 1em;
+  font-family: inherit;
+  outline: none;
+  border-radius: 0;
+}
+.select, .input {
+  min-width: 120px;
+}
+.slider {
+  width: 90px;
+}
+.tempVal {
+  color: #aaa;
+  font-size: 0.97em;
+  margin-left: 4px;
+}
+.tokenInfo {
+  color: #888;
+  font-size: 0.95em;
+  margin-right: 12px;
+}
+.file:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}

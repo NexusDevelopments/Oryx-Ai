@@ -1,16 +1,24 @@
+
 import React from "react";
 import styles from "./ChatArea.module.css";
+import MarkdownMessage from "./MarkdownMessage";
 
-export default function ChatArea({ messages, onCopy, onRegenerate, onStop, isStreaming, typing }) {
+const ChatArea = React.memo(function ChatArea({ messages, onCopy, onRegenerate, onStop, isStreaming, typing }, ref) {
   return (
-    <main className={styles.chatArea} tabIndex={0} aria-label="Chat messages">
+    <main className={styles.chatArea} tabIndex={0} aria-label="Chat messages" ref={ref}>
       <div className={styles.inner}>
         {messages.length === 0 && (
           <div className={styles.empty}>ORYX is ready. Start a conversation.</div>
         )}
         {messages.map((msg, i) => (
           <div key={msg.id || i} className={msg.role === 'user' ? styles.userMsg : styles.oryxMsg}>
-            <div className={styles.msgContent}>{msg.content}</div>
+            <div className={styles.msgContent}>
+              {msg.role === 'oryx' ? (
+                <MarkdownMessage content={msg.content} />
+              ) : (
+                msg.content
+              )}
+            </div>
             {msg.role !== 'user' && (
               <div className={styles.msgActions}>
                 <button onClick={() => onCopy(msg.id)} aria-label="Copy message">⧉</button>
@@ -30,4 +38,5 @@ export default function ChatArea({ messages, onCopy, onRegenerate, onStop, isStr
       </div>
     </main>
   );
-}
+});
+export default React.forwardRef(ChatArea);

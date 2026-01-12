@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import styles from "./InputArea.module.css";
 
-export default function InputArea({ value, onChange, onSend, disabled }) {
+const InputArea = React.memo(function InputArea({ value, onChange, onSend, disabled }) {
   const textareaRef = useRef(null);
 
   useEffect(() => {
@@ -38,4 +38,5 @@ export default function InputArea({ value, onChange, onSend, disabled }) {
       )}
     </form>
   );
-}
+});
+export default InputArea;

@@ -9,7 +9,7 @@ import { Oryx, RequestType } from '../src/index';
 
 async function completeWorkflow() {
   console.log('Starting Complete Oryx Workflow Demo');
-  console.log('=' .repeat(60));
+  console.log('='.repeat(60));
 
   const oryx = new Oryx();
   await oryx.initialize();

@@ -1,0 +1,31 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 48px;
+  background: #18191a;
+  border-bottom: 1px solid #232425;
+  display: flex;
+  align-items: center;
+  z-index: 100;
+}
+.logoWrap {
+  display: flex;
+  align-items: center;
+  margin-left: 24px;
+}
+.logo {
+  width: 28px;
+  height: 28px;
+  margin-right: 12px;
+  filter: grayscale(1) brightness(2);
+}
+.wordmark {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: #fff;
+  user-select: none;
+}

@@ -1,0 +1,50 @@
+.inputArea {
+  position: fixed;
+  left: 260px;
+  right: 0;
+  bottom: 0;
+  background: #18191a;
+  border-top: 1px solid #232425;
+  display: flex;
+  align-items: flex-end;
+  padding: 16px 0 16px 0;
+  z-index: 100;
+  max-width: 720px;
+  margin: 0 auto;
+  width: calc(100vw - 260px);
+}
+.textarea {
+  flex: 1;
+  min-height: 36px;
+  max-height: 120px;
+  resize: none;
+  background: #232425;
+  color: #f5f6fa;
+  border: none;
+  font-size: 1.08em;
+  padding: 10px 14px;
+  border-radius: 0;
+  outline: none;
+  font-family: inherit;
+  line-height: 1.5;
+  box-sizing: border-box;
+  margin-right: 8px;
+  transition: background 0.15s;
+}
+.textarea:focus {
+  background: #232425cc;
+}
+.sendBtn {
+  background: #232425;
+  color: #f5f6fa;
+  border: none;
+  font-size: 1.3em;
+  padding: 0 18px;
+  cursor: pointer;
+  transition: background 0.15s;
+  height: 36px;
+  align-self: flex-end;
+}
+.sendBtn:hover, .sendBtn:focus {
+  background: #232425cc;
+}

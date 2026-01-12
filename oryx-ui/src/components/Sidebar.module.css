@@ -1,0 +1,79 @@
+.sidebar {
+  position: fixed;
+  top: 48px;
+  left: 0;
+  bottom: 0;
+  width: 260px;
+  background: #191a1b;
+  border-right: 1px solid #232425;
+  display: flex;
+  flex-direction: column;
+  z-index: 90;
+}
+.header {
+  padding: 16px 16px 8px 16px;
+  border-bottom: 1px solid #232425;
+}
+.newBtn {
+  width: 100%;
+  background: #232425;
+  color: #f5f6fa;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 10px 0;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.newBtn:hover, .newBtn:focus {
+  background: #232425cc;
+}
+.listWrap {
+  flex: 1;
+  overflow-y: auto;
+  padding: 8px 0;
+}
+.item, .activeItem {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-left: 3px solid transparent;
+  font-size: 1rem;
+  color: #e0e0e0;
+  outline: none;
+  transition: background 0.12s, border-color 0.12s;
+}
+.item:hover, .item:focus {
+  background: #222325;
+}
+.activeItem {
+  background: #202123;
+  border-left: 3px solid #f5f6fa;
+  color: #fff;
+}
+.title {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.renameBtn, .deleteBtn {
+  background: none;
+  border: none;
+  color: #888;
+  font-size: 1.1em;
+  margin-left: 8px;
+  cursor: pointer;
+  padding: 2px 4px;
+  transition: color 0.15s;
+}
+.renameBtn:hover, .deleteBtn:hover {
+  color: #fff;
+}
+.empty {
+  color: #555;
+  text-align: center;
+  padding: 32px 0;
+  font-size: 0.95em;
+}

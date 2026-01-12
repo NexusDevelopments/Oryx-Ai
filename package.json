@@ -1,0 +1,33 @@
+{
+  "name": "oryx-ai",
+  "version": "1.0.0",
+  "description": "Oryx - A unified intelligence platform that combines chat, image generation, video creation, data analysis, and coding into a single system",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "test": "jest",
+    "lint": "eslint src --ext .ts"
+  },
+  "keywords": [
+    "ai",
+    "chat",
+    "image-generation",
+    "video-creation",
+    "data-analysis",
+    "coding-assistant",
+    "unified-platform"
+  ],
+  "author": "NexusDevelopments",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {}
+}
